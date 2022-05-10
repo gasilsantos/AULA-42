@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>exemplo 1</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <input type="text" name="name" id="name" placeholder="nome"
+        onblur="changecolor()" onfocus="">
+        <input type="password" name="password" id="password" placeholder="senha">
+        <input type="submit" id="submit" onclick="ola()">
+
+    </div>
+
+</body>
+
+<script>
+
+    function changecolor(){
+        document.getElementById("name").style.background = "coral"
+    }
+
+    function ola() {
+        var nome = document.getElementById("name").value
+
+        var senha = document.getElementById("password").value
+
+        document.getElementById("name").focus()
+ 
+        console.log("nome:", nome, "senha:", senha)
+
+        console.log(document.getElementByIdtagname("input"))
+
+        console.log(document.queryselector("input"))
+
+    }
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container">
+
+      <input type="submit" name="btn" id="btn">
+
+    </div>
+     
+</body>
+
+    <script>
+
+    var para = document.createElement("P")
+
+    para.innerHTML = "paragrafo dinamico"
+    para.style.color = "red"
+    para.style.fontFamily = "Arial" 
+    
+
+    document.getElementById("container").appendChild(para)
+
+    function remove(){
+        var para = document.getElementById("para")
+
+        para.parentNode.removeChild(para)
+    }
+
+    </script>
+ 
+</html>
